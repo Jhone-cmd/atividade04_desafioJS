@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+  
+  <title>Teatro - Reservas de Poltrona</title>
+
+  <style>
+      body{
+          margin-top: 12px;
+      }
+      h1{
+        border-bottom-style: inset; 
+      }
+    .imagemdoteatro{
+        max-width: 100%;
+    }
+    .margemSuperior{
+        margin-top: 30px;
+    }
+    .margemEsquerda{
+        margin-left: 15px;
+    }
+    .margemDireita{
+        text-align: right;
+    }
+    .poltrona{
+        width: 24; height: 16px;
+    }
+    figure{
+        
+        display: inline-block; font-size: 0.7em; margin: 5px; 
+    }
+</style>
+ 
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="imagemdoteatro.jpg" alt="Teatro" class="imagemdoteatro">
+      </div>
+      <div class="col-sm-9">
+        <h1>Teatro: Show Musical - Reserva de Poltronas</h1>
+
+        <div class="row">
+          <div class="col-sm-2">
+            <p>
+              <label for="nPoltrona">Nº da Poltrona:</label>
+              <input type="text" class="form-control margemDireita" id="nPoltrona" autofocus>
+            </p>
+          </div>
+        
+          <div  class="col-sm-4">
+            <input type="button" class="btn btn-primary margemSuperior" 
+                   value="Reservar" id="botaoReservar">
+            <input type="button" class="btn btn-danger margemSuperior" 
+                   value="Confirmar Reserva" id="botaoConfirmar">
+          </div>
+       
+          <div class="col-sm-6">
+            <p>Legenda:</p>
+            <p>
+              <img src="disponivel.jpg"> Disponível
+              <img src="reservada.jpg" class="margemEsquerda"> Reservada
+              <img src="ocupada.jpg" class="margemEsquerda"> Ocupada
+            </p>
+          </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-12">
+            <p class="bg-primary text-white text-center"> Palco do Teatro </p>
+        </div>
+            <div class="container">
+          <div class="col-sm-12" id="palco">
+                        
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="teatro-reservas.js"></script>
+</body>
+
+</html>

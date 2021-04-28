@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="6">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Painel dos Pacientes</title>
+      
+    <style>
+        
+        body{
+            background-color: azure;
+        }
+        tbody{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="margin-top: 18px; text-align: center;">Pacientes</h1>
+    
+    <form >
+        <table class="table table-hover">
+            <thead>
+
+                <th width="40%" >Nome do Paciente</th>
+                <th width="30%">Status</th>
+                <th width="10%">Hora <br> Início</th>
+                <th width="10%">Início <br> Previsto</th>
+                <th width="10%">Fim <br> Previsto</th>
+                <th width="10%">Saída Prevista</th>
+
+            </thead>
+
+            <tbody id="corpotabela">
+
+            </tbody>
+
+        </table>
+    </form>
+    <script src="centro-cirurgico.js"></script>
+    
+</body>
+</html>

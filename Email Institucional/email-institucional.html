@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="email-institucional.js"></script>
+    <title>E-mail Institucional</title>
+
+</head>
+<body>
+      
+    <img style="float: left; width: 300px; height: auto;" src="email.jpg" alt="E-mail">
+
+    <div class="container">
+
+        <div class="row">
+        <h1 class="col-sm-9" style="margin-top: 40px; margin-left: 10px;">Programa de E-mail Institucional</h1>    
+        </div>
+     
+        <div class="col">
+        <label  for="funcionario" style="font-size:25px;">Funcionário:</label>
+        <input class="col-sm-5" type="text" id="funcionario" name="funcionario">
+        </div>
+
+        <div class="row">
+        <button style="margin-left: 25px; font-size: 25px;" onclick="gerar()" class="btn-primary" type="button" id="geraremail" name="geraremail">Gerar E-mail do Funcionário</button>
+        </div>
+        <br>
+        <div class="col">
+            <h4 id="saidadoemail" name="saidadoemail"></h4>
+
+        </div>
+    </div>
+</body>
+</html>

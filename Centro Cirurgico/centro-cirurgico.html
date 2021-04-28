@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Centro-Cirurgico</title>
+    <style>
+        a:link, a:visited, a:active{
+            color: white;
+            text-decoration: none;
+        }
+        body{
+            background-color: azure;
+        }
+        tbody{
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1 style="margin-top: 18px; text-align: center;">Painel do Centro Cirurgico</h1>
+        <form id="formulario">
+        <div class="row">
+
+            <div class="form-group col-sm-6">
+                <label for="nome">Nome do Paciente</label>
+                <input class="form-control" type="text" name="nome" id="nome" autocomplete="off">
+            </div>
+
+            <div class="form-group col-sm-3">
+                <label for="status">Status</label>
+
+                <select class="form-control" id="status" name="status">
+                    <option value="operatorio">Pré Operatório</option>
+                    <option value="cirurgia">Em cirurgia</option>
+                    <option value="recuperacao">Em Recuperação</option>
+                    <option value="transferido">Transferído</option>
+                </select>
+            </div>
+
+            <div class="fomr-group col-sm-3">
+                <label for="local">Local</label>
+                <input class="form-control" type="text" name="local" id="local">
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="form-group col-sm-3">
+                <label for="inicio">Hora de Início</label>
+                <input class="form-control" type="time" name="inicio" id="inicio">
+            </div>
+
+            <div class="form-group col-sm-3">
+                <label for="inicioPrevisto">Início Previsto</label>
+                <input class="form-control" type="time" name="inicioPrevisto" id="inicioPrevisto">
+            </div>
+
+            <div class="form-group col-sm-3">
+                <label for="fimPrevisto">Fim Previsto</label>
+                <input class="form-control" type="time" name="fimPrevisto" id="fimPrevisto">
+            </div>
+
+            <div class="form-group col-sm-3">
+                <label for="saidaPrevista">Saída Prevista</label>
+                <input class="form-control" type="time" name="saidaPrevista" id="saidaPrevista">
+            </div>
+
+        </div>
+
+        <div class="row">
+            
+            <div class="col">
+                <button type="button" class="btn btn-secondary" onclick="novo()">Novo</button>
+                <button type="button" class="btn btn-primary" onclick="gravar()">Gravar</button>
+                <button type="button" class="btn btn-danger" onclick="apagar()">Apagar</button>
+                <button type="button" class="btn btn-success"><a href="painel.html" target="_blank">Painel dos Pacientes</a></button>
+                <input class="col-sm-1" type="hidden" style="text-align: center;" name="id" id="id" autocomplete="off">
+                
+            </div>  
+
+        </div>
+        <br>
+        <table class="table table-hover">
+            <thead>
+
+                <th width="40%" >Nome do Paciente</th>
+                <th width="30%">Status</th>
+                <th width="10%">Hora <br> Início</th>
+                <th width="10%">Início Previsto</th>
+                <th width="10%">Fim <br> Previsto</th>
+                <th width="10%">Saída Prevista</th>
+
+            </thead>
+
+            <tbody id="corpotabela">
+
+            </tbody>
+
+        </table>
+
+    </form>
+    </div>
+    <script src="centro-cirurgico.js"></script>
+</body>
+</html>
